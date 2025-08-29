@@ -1,1 +1,60 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple HTML5 Form Example</title>
+</head>
+<body>
+  <h1>Course Registration</h1>
+
+  <form>
+    <label>
+      Full Name:
+      <input type="text" name="fullname" placeholder="Jane Doe" required autocomplete="name">
+    </label>
+    <br><br>
+    <label>
+      Email:
+      <input type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+    </label>
+    <br><br>
+    <label>
+      Date of Birth:
+      <input type="date" name="dob" required>
+    </label>
+    <br><br>
+    <label>
+      Username:
+      <input type="text" name="username" placeholder="Choose a username" required>
+    </label>
+    <br><br>
+    <label>
+      Password:
+      <input type="password" name="password" placeholder="At least 8 characters" required minlength="8">
+    </label>
+    <br><br>
+    <label>
+      Choose Course:
+      <select name="course" required>
+        <option value="">Select...</option>
+        <option value="html5">Advanced HTML5</option>
+        <option value="css3">Modern CSS3</option>
+        <option value="js">JavaScript Basics</option>
+      </select>
+    </label>
+    <br><br>
+    <label>
+      Mode:
+      <input type="radio" name="mode" value="online" required> Online
+      <input type="radio" name="mode" value="onsite"> Onsite
+    </label>
+    <br><br>
+    <label>
+      <input type="checkbox" name="newsletter" value="yes"> Subscribe to newsletter
+    </label>
+    <br><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
